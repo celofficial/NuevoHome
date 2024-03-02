@@ -105,7 +105,7 @@ nav a:hover span{
 .wrapper {
   position: relative;
   width: 400px;
-  height: 600px;
+  height: 550px;
   /*background-color: rgba(255, 255, 255, 0.434);*/
   box-shadow: 0 8px 32px rgb(126, 31, 135);
   border: 1px solid rgba(65, 11, 140, 0.18);
