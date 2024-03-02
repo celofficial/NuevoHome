@@ -26,34 +26,36 @@ body {
 
 /* NAV */
 
-.navbar {
+.navbar{
   padding-top: 0px;
   /* padding-bottom: 10px; */
 }
-nav a {
+nav a{
   position: relative;
   font-size: 1.1em;
   font-weight: 500;
   color: rgb(207, 202, 202);
   text-decoration: none;
   padding: 6px 5px;
-  transform: 0.5s;
+  transform: .5s;
 }
-nav .btn {
-  width: 100px;
-  padding: 5px 0;
-  text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  font-weight: bold;
-  border: 2px solid #8edfd8;
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+nav .btn{
+  
+    width: 100px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #8edfd8;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
 }
-nav .sp {
+nav .sp{
   background: #009688;
   height: 200%;
   width: 0;
@@ -64,8 +66,8 @@ nav .sp {
   z-index: -1;
   transition: 0.5s;
 }
-nav .btn:hover .sp {
-  width: 100%;
+nav .btn:hover .sp{
+  width: 100% ;
 }
 /* nav a:hover{
    color: #0ef; 
