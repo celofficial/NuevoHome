@@ -5,9 +5,11 @@ from django.contrib.auth import logout
 from django.shortcuts import redirect
 from . forms import CreateUserForm
 
+
 def homepage(request):
 
     return render(request, 'base/index.html')
+
 
 def register(request):
 
@@ -65,7 +67,7 @@ def user_login(request):
 
 def dashboard(request):
 
-    return render(request, 'base/home/myhome.html')
+    return render(request, 'base/home/home-index.html')
 
 def user_logout(request):
     logout(request)
