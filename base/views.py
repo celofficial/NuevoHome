@@ -50,17 +50,16 @@ def register(request):
 
 def user_login(request):
 
-    if request.method=='POST':
-        username=request.POST.get('username')
-        password=request.POST.get('password')
-        print(username,password)
-        user=authenticate(request,username=username,password=password)
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print(username, password)
+        user = authenticate(request, username=username,password=password)
         if user is not None:
-            login(request,user)
+            login(request, user)
             return redirect('dashboard')
         else:
             return HttpResponse('Username or Password is incorrect!')
-
 
     return render(request, 'base/auth/login.html')
 
@@ -68,6 +67,11 @@ def user_login(request):
 def dashboard(request):
 
     return render(request, 'base/home/home-index.html')
+
+
+def product_details(request):
+    return render(request, 'base/prod/product-style.html')
+
 
 def user_logout(request):
     logout(request)
